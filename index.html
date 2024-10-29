@@ -95,7 +95,7 @@ document.write("</table>");
             <span class="text-white">0 ms</span>
           </div>
           <div class="enter-link">
-            <a href="https://1.14012.cn/" target="_blank"><span class="c_blue">获取微信最新二维码</span> </a>
+            <a onclick="redirectToRandomSubdomain('3317.top')" target="_blank"><span class="c_blue">最新地址一</span> </a>
           </div>
         </div>
         <div class="enter-maomi">
@@ -106,7 +106,7 @@ document.write("</table>");
             <span class="text-white">0 ms</span>
           </div>
           <div class="enter-link">
-            <a href="https://3.14014.cn/" target="_blank"><span class="c_blue">获取微信最新二维码</span> </a>
+            <a onclick="redirectToRandomSubdomain('3317.top')" target="_blank"><span class="c_blue">最新地址二</span> </a>
           </div>
         </div>
         <div class="enter-maomi">
@@ -117,7 +117,7 @@ document.write("</table>");
             <span class="text-white">0 ms</span>
           </div>
           <div class="enter-link">
-            <a href="https://1.14014.cn/" target="_blank"><span class="c_blue">获取微信最新二维码</span> </a>
+            <a onclick="redirectToRandomSubdomain('3317.top')" target="_blank"><span class="c_blue">最新地址三</span> </a>
           </div>
         </div>
         <div class="enter-maomi">
@@ -128,7 +128,7 @@ document.write("</table>");
             <span class="text-white">0 ms</span>
           </div>
           <div class="enter-link">
-            <a href="https://2.14014.cn/" target="_blank"><span class="c_blue">浏览器直接观看通道</span> </a>
+            <a onclick="redirectToRandomSubdomain('3317.top')" target="_blank"><span class="c_blue">最新地址四</span> </a>
           </div>
         </div>
         <div class="enter-maomi">
@@ -139,10 +139,25 @@ document.write("</table>");
             <span class="text-white">0 ms</span>
           </div>
           <div class="enter-link">
-            <a href="https://qm.qq.com/q/vSy1ibXroI" target="_blank"><span class="c_blue">点击添加总部QQ</span> </a>
+            <a onclick="redirectToRandomSubdomain('3317.top')" target="_blank"><span class="c_blue">最新地址五</span> </a>
           </div>
         </div>
+  <script>
+    function generateRandomString(length) {
+      var result = '';
+      var characters = 'abcdefghijklmnopqrstuvwxyz';
+      var charactersLength = characters.length;
+      for (var i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+      return result;
+    }
 
+    function redirectToRandomSubdomain(domain) {
+      var randomSubdomain = generateRandomString(8); // 生成一个长度为8的随机字符串
+      window.location.href = "https://" + domain + "/#" + randomSubdomain;
+    }
+  </script>
 
 <div class="web_notice" style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.3);z-index:99999">
     <div style="position:fixed;top:50%;left:50%;width:300px;background:#fff;transform:translate(-50%,-50%);border-radius:5px;padding:5px 15px">
